@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Battle Cats Card Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Battle Cats Card Game</h1>
+        <nav>
+            <ul>
+                <li><a href="#lobby">Lobby</a></li>
+                <li><a href="#game-screen">Game Screen</a></li>
+                <li><a href="#battle-ui">Battle UI</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="lobby">
+            <h2>Welcome to the Lobby</h2>
+            <button id="join-game">Join Game</button>
+            <div id="game-list"></div>
+        </section>
+
+        <section id="game-screen" style="display: none;">
+            <h2>Game Screen</h2>
+            <button id="start-battle">Start Battle</button>
+            <div id="player-hands"></div>
+            <div id="battlefield"></div>
+        </section>
+
+        <section id="battle-ui" style="display: none;">
+            <h2>Battle UI</h2>
+            <div id="player-status"></div>
+            <button id="end-turn">End Turn</button>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
